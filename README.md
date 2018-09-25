@@ -400,7 +400,40 @@ git checkout --track origin/<rama>
 ```
 git log             #uso base
 git log -<n>        #log de los últimos n commits
-git log 
+git log --oneline -5 #lista de commits breve
+```
+
+
+### diff
+
+- Git diff sirve para ver las diferencias entre el estado actual y otro:
+
+```
+git diff   # diferencia entre estado actual y el preparado o comprometido
+git diff --cached #diferencia entre el preparado y el último commit
+git diff --stat #idem al primero pero con información resumida de cambios
+```
+
+
+### diff desde un commit concreto
+
+- Podemos hacer diff sobre todo el repo o sobre un fichero.
+- Podemos referirnos a un commit por su hash o contando hacia atrás desde el HEAD o desde una rama.
+```
+git diff <commit> # cambios desde un commit hasta la actualidad
+git diff <commit> <file># idem fichero concreto
+git diff master~2 README.md #Cambios en los dos últimos commit de master
+git diff HEAD~2 README.md #Cambios en los dos últimos commit HEAD
+git diff cd598e4 README.md #Cambios desde un commit concreto por hash
+```
+
+
+### diff entre dos commit
+
+```
+git diff <commit>:<file>  <commit2>:<file> #diff de un fichero entre dos commits
+git diff cd598e4:README.md  31422ac:README.md
+git diff master~20:README.md  master~1:README.md
 ```
 
 
@@ -409,4 +442,4 @@ git log
 
 - Podemos decir a git que no tenga en consideración algunos ficheros/directorios
 - Para hacerlo debemos crear un fichero `.gitignore` en el directorio raiz
-- Para ver algunos ejemplos puedes visitar https://www.atlassian.com/git/tutorials/gitignore
+- Para ver algunos ejemplos puedes visitar https://www.atlassian.com/git/tutorials/gitignorenuevo
