@@ -445,3 +445,8 @@ git diff master~20:README.md  master~1:README.md
 - Podemos decir a git que no tenga en consideración algunos ficheros/directorios
 - Para hacerlo debemos crear un fichero `.gitignore` en el directorio raiz
 - Para ver algunos ejemplos puedes visitar https://www.atlassian.com/git/tutorials/gitignorenuevo
+
+
+
+## Etiquetas (tags)
+__pendiente__
