@@ -401,6 +401,8 @@ git checkout --track origin/<rama>
 git log             #uso base
 git log -<n>        #log de los últimos n commits
 git log --oneline -5 #lista de commits breve
+git log --follow [file] #lista de commit con cambios para "file"
+git show <commit>  # información completa de un commit concreto
 ```
 
 
