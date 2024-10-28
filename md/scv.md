@@ -361,8 +361,8 @@ git merge <rama>        //fundimos con la rama deseada
 git push                        # sube rama "preferida"
 git push <repo remoto> <rama>   # sube una rama concreta
 git push origin dev             # Ej. sube rama dev
-git push -u <repo remoto> <rama># sube y predetermina rama
-git push -u origin master       # Ej. sube y pred. master
+git push -u <repo remoto> <rama># sube rama y la víncula con el remoto
+git push -u origin master       # Ej. sube master y la vincula con origin/master
 ```
 
 
